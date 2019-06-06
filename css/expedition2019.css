@@ -1,0 +1,594 @@
+.blackout {
+    background: #333;
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.1;
+    top: 0;
+}
+.expedition_baner {
+     background: center center no-repeat url("../img/default4.jpg");
+     font-family: 'PT Sans', sans-serif;
+     padding: 40px 0;
+     background-size: cover;
+     height: 440px;
+     position: relative;
+ }
+
+.expedition_data {
+    padding: 15px 0 0;
+}
+
+.expedition_list {
+    display: table-row;
+}
+
+.expedition_date {
+    color: #000;
+    line-height: 24px; 
+    font-size: 12px;
+    text-transform: uppercase;
+    display: table-cell;
+    padding-right: 25px;
+    padding-left: 15px;
+}
+
+.expedition_date p {
+    background: url("../images/expedition2019/arrow/inactive.png") right center no-repeat;
+    width: 75px;
+    height: 45px; 
+    margin-left: 19px;
+}
+
+.expedition_date .day {
+    font-size: 24px;
+    line-height: 18px;
+    padding-top: 6px;
+    display: block;
+}
+
+.expedition_date span {
+    margin-left: -10px;
+}
+
+.expedition_info {
+    line-height: 24px;    
+    display: table-cell;
+    vertical-align: top;
+    height: 100px;
+}
+.expedition_info a {
+    text-decoration: none;
+}
+.expedition_info a:hover .expedition_title, .expedition_info a:hover .expedition_address {
+    color: #EB423C;
+}
+
+.expedition_time {
+    background: #c4c4c4;
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0px 12px;
+    margin-bottom: 4px;
+}
+
+.expedition_title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.expedition_info.region {
+    height: 70px;
+}
+
+.expedition_info.region .expedition_title {
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.expedition_address {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 18px;
+    padding-right: 10px;
+}
+
+.expedition_date.active p {
+    background: url("../images/expedition2019/arrow/active.png") center center no-repeat;
+    color: #fff;
+    width: 94px;
+    margin: 0;
+}
+
+.expedition_test_info {
+    font-family: 'PT Sans', sans-serif;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.expedition_test_info .border-right {
+    border-right: 1px solid #B3B0B0;
+}
+
+.expedition_test_info .row {
+    padding: 20px 0;
+}
+
+.expedition_test_info .hash {
+    display: block;
+    text-align: center;
+}
+
+.expedition_test_info .btn {
+    background: #c4c4c4;
+    border-radius: unset;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 8px 40px;
+}
+
+.expedition_test_info .btn:hover {
+    background: #888;
+}
+
+.slider_region {
+    margin-bottom: 50px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.slider_region_info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slider_region_info .expedition_time {
+    float: left;
+    margin: 12px 0 0 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.slider_region_info .expedition_time.active {
+    background: #EE2225;
+    color: #fff;
+    position: relative;
+}
+
+.slider_region .fon {
+    background: linear-gradient(43.32deg, rgba(234, 61, 56, 0.5) 0%, rgba(248, 138, 104, 0.5) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slider_region_title {
+    line-height: 15px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.slider_region_block {
+    margin: 0 5px;
+    position: relative;
+}
+
+.expedition_result {
+    background: rgba(255, 255, 255, 0.8);
+    width: 108px;
+    height: 108px;
+    display: inline-block;
+    border-radius: 70px;
+    margin-top: 45px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    color: #000000;
+    z-index: 9;
+    position: relative;
+}
+
+.expedition_result_mobile {
+    top: 50%;
+    margin-top: -54px;
+}
+
+.expedition_result b {
+    line-height: 24px;
+    font-size: 36px;
+    text-align: center;
+    color: #EE2225;
+    margin-top: 26px;
+    display: inline-block;
+}
+
+.expedition_slider_region_arrow {
+    background: #C4C4C4;
+    width: 26px;
+    height: 26px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 48%;
+    line-height: 28px;
+    text-decoration: none;    
+}
+
+.expedition_slider_region_arrow.active {
+    cursor: pointer;
+}
+
+.expedition_slider_region_arrow:hover {
+    color: #fff;
+}
+
+.expedition_slider_region_arrow_left{        
+    left: 80px;
+}
+.expedition_slider_region_arrow_right{
+    right: 80px;
+}
+
+.expedition_slider_region_arrow_left.active{
+    background: linear-gradient(46.7deg, #E93A37 0%, #F78A68 97.2%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.expedition_slider_region_arrow_left.active span {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.expedition_slider_region_arrow_right.active {
+    background: linear-gradient(46.7deg, #E93A37 0%, #F78A68 97.2%);
+}
+
+.expedition_line {
+    background: #C4C4C4 url("../images/expedition2019/Group.png") center center repeat-x;
+    border-radius: 3.5px;
+    height: 7px;
+    /*padding: 0 10px;*/
+    border-right: 3px solid #C4C4C4;
+    border-left: 3px solid #C4C4C4;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+}
+.expedition_line.expedition_line_red {
+    background-color: #EE2225;
+    border-right: 3px solid #EE2225;
+    border-left: 3px solid #EE2225;
+    left: 0;
+}
+
+.autoByLine {
+    margin-top: -26px;
+    margin-right: -42px;
+    z-index: 5;
+    position: absolute;
+    right: 1%;
+}
+
+.statistics__main {
+    margin-top: 0;
+    height: 90%;
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+    z-index: 1;
+}
+.blc {
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: #aaa;
+    opacity: 0.3;
+    z-index: 3;
+}
+
+@media screen and (max-width: 991px) {
+    .statistics__main {
+        height: 75%;
+        right: 3%;
+        bottom: 10%;
+    }
+}
+
+.statistics_header {
+    background: #EB423C;
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    color: #fff;
+}
+
+.statistics_body {
+    padding: 0 10px 10px;
+}
+
+.statistics_chart {
+    width: 174px;
+    height: 174px;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 100px;
+    border: solid 10px rgba(223, 34, 34, 0.25);
+    color: #000;
+    display: table;
+}
+
+.statistics_chart span {
+    display: block;
+    text-align: center;
+}
+
+.statistics_chart strong {
+    font-size: 36px;
+    line-height: 50px;
+    color: #EE2225;
+}
+
+.statistics_circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    position: absolute;
+    border: solid 2px rgba(223, 34, 34, 0.25);
+    left: 50%;
+    margin-left: -70px;
+    top: 50%;
+    margin-top: -70px;
+}
+
+.statistics_circle_complite {
+    width: 174px;
+    height: 174px;
+    position: absolute;
+    left: 50%;
+    margin-left: -87px;
+}
+
+.statistics_result {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.statistics_autoChart {
+    background: #C4C4C4 url("../images/expedition2019/autoChart.png") center center no-repeat;
+    border-radius: 100px;
+    width: 41px;
+    height: 41px;
+}
+
+.statistics hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: #8C8C8C;
+}
+
+.statistics .statistics_info {
+    padding: 0 10px;
+}
+
+.statistics table {
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    width: 100%;
+}
+
+.statistics table strong{
+    font-size: 24px;
+    line-height: 24px;
+    display: block;
+}
+
+.statistics table strong span.done {
+    font-size: 24px;
+}
+.statistics table strong span.all {
+    font-size: 14px;
+}
+
+.expedition_flags {
+    margin: 40px 0;
+    position: relative;
+    background: url("../images/expedition2019/karta.png") center center no-repeat;
+    height: 452px;    
+}
+
+.expedition_flags ul {
+    list-style-type: none;
+}
+
+.expedition_flags ul li {
+    position: absolute;
+    display: block;
+    width: 57px;
+    height: 37px;
+}
+
+.expedition_flags ul li.flag_kamchatskogo_kraya {
+    top: 349px;
+    left: 600px;
+}
+.expedition_flags ul li.sakhalin_obl {
+    top: 106px;
+    left: 663px;
+}
+.expedition_flags ul li.flag_primorskogo_kraya {
+    top: 150px;
+    left: 230px;
+}
+.expedition_flags ul li.flag_habarovskogo_kraya {
+    top: 61px;
+    left: 599px;
+}
+.expedition_flags ul li.flag_amurskoy_oblasti {
+    top: 304px;
+    left: 854px;
+}
+.expedition_flags ul li.zabaykalskiy_flag {
+    top: 106px;
+    left: 726px;
+}
+.expedition_flags ul li.zabaykalskiy_flag {
+    top: 106px;
+    left: 726px;
+}
+.expedition_flags ul li.flag_buryatii {
+    top: 349px;
+    left: 663px;
+}
+.expedition_flags ul li.flag_irkutskoj_oblasti {
+    top: 303px;
+    left: 470px;
+}
+.expedition_flags ul li.flag_krasnoyarskogo_kraya {
+    top: 197px;
+    left: 978px;
+}
+.expedition_flags ul li.flag_hakasii {
+    top: 61px;
+    left: 664px;
+}
+.expedition_flags ul li.flag_kemerovskoj_oblasti {
+    top: 304px;
+    left: 663px;
+}
+.expedition_flags ul li.tomskaya_flag {
+    top: 106px;
+    left: 853px;
+}
+.expedition_flags ul li.flag_novosibirskoj_oblasti {
+    top: 197px;
+    left: 916px;
+}
+.expedition_flags ul li.flag_omskoj_oblasti {
+    top: 150px;
+    left: 293px;
+}
+.expedition_flags ul li.flag_tumenskoj_oblasti {
+    top: 149px;
+    left: 663px;
+}
+.expedition_flags ul li.flag_kurganskoj_oblasti {
+    top: 304px;
+    left: 537px;
+}
+.expedition_flags ul li.celyabinsky_oblast {
+    top: 304px;
+    left: 726px;
+}
+.expedition_flags ul li.flag_bashkortostana {
+    top: 304px;
+    left: 790px;
+}
+.expedition_flags ul li.flag_samarskoj_oblasti {
+    top: 195px;
+    left: 230px;
+}
+.expedition_flags ul li.ulyanovsk_obl {
+    top: 106px;
+    left: 790px;
+}
+.expedition_flags ul li.flag_tatarstana {
+    top: 107px;
+    left: 230px;
+}
+.expedition_flags ul li.flag_nizhegorodskoj_oblasti {
+    top: 60px;
+    left: 293px;
+}
+.expedition_flags ul li.flag_saratov_oblast {
+    top: 197px;
+    left: 853px;
+}
+.expedition_flags ul li.flag_volgogradskoy_oblasti {
+    top: 149px;
+    left: 727px;
+}
+.expedition_flags ul li.flag_krasnodarskogo_kraya {
+    top: 304px;
+    left: 600px;
+}
+.expedition_flags ul li.flag_rostovskoj_oblasti {
+    top: 107px;
+    left: 293px;
+}
+.expedition_flags ul li.flag_voronezhskoy_oblasti {
+    top: 149px;
+    left: 790px;
+}
+.expedition_flags ul li.flag_moskovskoy_oblasti {
+    top: 197px;
+    left: 789px;
+}
+.expedition_flags ul li.flag_smolenskoj_oblasti {
+    top: 107px;
+    left: 167px;
+}
+.expedition_flags ul li.flag_kaliningradskoj_oblasti {
+    top: 394px;
+    left: 663px;
+}
+
+
+.expedition_tooltip > .tooltip-inner{
+    background: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000;
+    border: solid 1px #B2B2B2;
+    border-radius: 0;
+    box-shadow: #ccc 0px 0px 10px;    
+    padding: 15px 10px;
+    width: 200px;
+}
+.expedition_tooltip > .tooltip-inner span {
+    display: block;
+}
+.expedition_tooltip > .tooltip-inner span.tooltip_date {
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.expedition_tooltip > .tooltip-inner span.tooltip_count {
+    line-height: 24px;
+    font-size: 36px;
+    text-align: center;
+    color: #EE2225;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.expedition_tooltip > .tooltip-inner span strong {
+    font-weight: normal;
+    background: #B7B7B7;
+    padding: 5px;
+}
+
+.expedition_tooltip.bottom .tooltip-arrow{    
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid #B7B7B7
+}
+.expedition_tooltip.bottom .tooltip-arrow .tooltip-arrow-fon {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 5px 5px;
+    border-bottom-color: #fff;
+    margin-left: -5px;
+    margin-top: 2px;
+}
